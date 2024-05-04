@@ -1,0 +1,44 @@
+{
+    "Intro": "Well hello there what is your name",
+    "Variables": {"Name":null},
+    "World": {
+        "Living_room":{
+            "Text": "You are in the living room",
+            "Edges": ["Gallery","Bathroom","Library"], 
+            "Keys": [],
+            "Window" : "You decide to look outside"
+        },
+        "Gallery": {
+            "Text":"You walk along endless corridors with no end... sorry this is still under construction",
+            "Keys": [],
+            "Edges": []
+        },
+        "Library":{
+            "Text": "You go into the library",
+            "Edges": ["Living_room"],
+            "Keys": [],
+            "Records": "You inspect the records and you see",
+            "Record_player" : "You walk clore to the record player and then ..."
+        },
+        "Bathroom":{
+            "Text": "You are in the bathroom",
+            "Edges": ["Living_room","Carpet"],
+            "Keys": [{
+                "Title":"Tub",
+                "Unlocked": "false"
+            }],
+            "Carpet": "You look under the carpet and you notice a key under it",
+            "Faucet": "You turn on the faucet"
+        },
+        "Carpet": {
+            "Text": "You look under the carpet and you notice a key under it",
+            "Edges":["Bathroom"],
+            "Keys": []
+         },
+        "Tub": {
+            "Text": "You see there is a key hole right next to the tub, you put in the key and the entire place floods",
+            "Edges": ["Bathroom"],
+            "Keys": []
+        }
+        }
+}
